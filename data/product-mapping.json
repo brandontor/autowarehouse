@@ -1,0 +1,65 @@
+[
+    {
+        "productId": "P001",
+        "productName": "Valentines Box",
+        "contents": [
+            {
+                "subProductId": "SP001",
+                "name": "Red Roses Bouquet",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP002",
+                "name": "Box of Chocolates",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP003",
+                "name": "Love Card",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "productId": "P002",
+        "productName": "Birthday Box",
+        "contents": [
+            {
+                "subProductId": "SP004",
+                "name": "Birthday Cupcake",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP005",
+                "name": "$100 Visa Gift Card",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP006",
+                "name": "Birthday Card",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "productId": "P002",
+        "productName": "Birthday Box",
+        "contents": [
+            {
+                "subProductId": "SP004",
+                "name": "Birthday Cupcake",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP005",
+                "name": "$100 Visa Gift Card",
+                "quantity": 1
+            },
+            {
+                "subProductId": "SP006",
+                "name": "Birthday Card",
+                "quantity": 1
+            }
+        ]
+    }
+]
