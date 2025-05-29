@@ -17,6 +17,11 @@
                 "subProductId": "SP003",
                 "name": "Love Card",
                 "quantity": 1
+            },
+            {
+                "subProductId": "SP004",
+                "name": "Women’s perfume",
+                "quantity": 1
             }
         ]
     },
@@ -25,17 +30,17 @@
         "productName": "Birthday Box",
         "contents": [
             {
-                "subProductId": "SP004",
+                "subProductId": "SP005",
                 "name": "Birthday Cupcake",
                 "quantity": 1
             },
             {
-                "subProductId": "SP005",
+                "subProductId": "SP006",
                 "name": "$100 Visa Gift Card",
                 "quantity": 1
             },
             {
-                "subProductId": "SP006",
+                "subProductId": "SP007",
                 "name": "Birthday Card",
                 "quantity": 1
             }
@@ -46,17 +51,17 @@
         "productName": "Client Gift Box",
         "contents": [
             {
-                "subProductId": "SP007",
+                "subProductId": "SP008",
                 "name": "Bottle of wine",
                 "quantity": 1
             },
             {
-                "subProductId": "SP008",
+                "subProductId": "SP009",
                 "name": "Fruit basket",
                 "quantity": 1
             },
             {
-                "subProductId": "SP009",
+                "subProductId": "SP0010",
                 "name": "Pen",
                 "quantity": 1
             }
