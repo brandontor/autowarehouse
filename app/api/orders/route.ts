@@ -1,9 +1,9 @@
 import ordersData from '../../../data/orders.json';
 import productMappingData from '../../../data/product-mapping.json'
 import { type Order, type Product } from '../../../types/data'
-import { NextResponse, NextRequest } from 'next/server';
+import { type NextResponse, type NextRequest } from 'next/server';
 
-export const dynamic = 'force-static'
+export const dynamic = 'force-dynamic'
 
 /*
   This route returns:
@@ -11,13 +11,15 @@ export const dynamic = 'force-static'
   2. Pack list of orders and their item contents with customer shipping details
 */
 
-export async function GET(req: NextRequest) {
+export async function GET(request: NextRequest) {
 
-  //Retreive the order data from req
-  let today = new Date()
+  //Retreive the order date
+  const inputDate = request.nextUrl.searchParams.get('date')
 
-  //Retrieve this days order data
-  const orders = getOrdersByDate(today)
+  if (!inputDate) return new Response(`There was an error with the date. Date: ${inputDate}`, { status: 500 })
+
+  //Retrieve order data based on input date
+  const orders = getOrdersByDate(inputDate)
 
   //Retrieve Packing List
   const packingList = generatePackingList(orders)
@@ -32,13 +34,8 @@ export async function GET(req: NextRequest) {
 
 
 //This function will return an array of orders that match the given date
-const getOrdersByDate = (date: Date) => {
-
-  //Parse the date into a date string
-  //Ideally this is done on the front end but just incase we don't control the frontend
-  const dateString = date.toISOString().split('T')[0]
-
-  const orders: Order[] = ordersData.filter((order) => order.orderDate === dateString)
+const getOrdersByDate = (date: string) => {
+  const orders: Order[] = ordersData.filter((order) => order.orderDate === date)
 
   return orders
 }
