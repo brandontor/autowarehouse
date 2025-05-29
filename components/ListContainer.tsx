@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import { type Order } from '@/types/data'
-import PackingListContainer from './PackingListContainer'
-import PickingListContainer from './PickingListContainer'
+import PackingListCard from './PackingListCard'
+import PickingListCard from './PickingListCard'
 import { DatePicker } from './ui/datepicker'
 
 function ListContainer() {
@@ -36,13 +36,15 @@ function ListContainer() {
 
 
     return (
-        <div>
-            <h1>Select a Date</h1>
+        <div className='w-full flex flex-col items-center gap-4'>
+            <h1>Search by Order Date - Select a Date</h1>
             <div>
                 <DatePicker date={date} setDate={setDate}></DatePicker>
             </div>
-            <PackingListContainer packingList={packingList}></PackingListContainer>
-            <PickingListContainer pickingList={pickingList}></PickingListContainer>
+            <div className='w-full flex flex-col space-y-4 '>
+                <PickingListCard pickingList={pickingList}></PickingListCard>
+                <PackingListCard packingList={packingList}></PackingListCard>
+            </div>
         </div>
     )
 }
