@@ -42,22 +42,22 @@
         ]
     },
     {
-        "productId": "P002",
-        "productName": "Birthday Box",
+        "productId": "P003",
+        "productName": "Client Gift Box",
         "contents": [
             {
-                "subProductId": "SP004",
-                "name": "Birthday Cupcake",
+                "subProductId": "SP007",
+                "name": "Bottle of wine",
                 "quantity": 1
             },
             {
-                "subProductId": "SP005",
-                "name": "$100 Visa Gift Card",
+                "subProductId": "SP008",
+                "name": "Fruit basket",
                 "quantity": 1
             },
             {
-                "subProductId": "SP006",
-                "name": "Birthday Card",
+                "subProductId": "SP009",
+                "name": "Pen",
                 "quantity": 1
             }
         ]
