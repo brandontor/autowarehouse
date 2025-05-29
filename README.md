@@ -1,4 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Auto Warehouse
+---
+This Application will automatically generate the following:
+- Picking List
+- Packing List
+
+### Note* 
+Our Databases only contain data for May 27th, 2025 and May 29th, 2025
+
+## Clone this Repo 
+
+```bash
+git clone https://github.com/brandontor/autowarehouse.git
+```
+
+
+## Install Dependencies
+
+You will need NPM to install  dependencies
+
+**Note** - This application utilizes [React Day Picker ver 8.10.1](https://www.npmjs.com/package/react-day-picker) and will throw a peer dependency error. 
+
+You can resolve this by utilizing the **--force** flag when installing
+```bash
+cd autowarehouse
+npm install --force
+```
 
 ## Getting Started
 
@@ -6,31 +32,29 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack 
+- React.js 
+- Next.js
+- Tailwind
+- ShadCN
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Refer to package.json for versions.
 
-## Learn More
+## Using the app
 
-To learn more about Next.js, take a look at the following resources:
+Utilize the Date Picker to lookup orders based on their Order date. The Picking & Packing list will generate based on the returned orders.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Picking List
+![PickingList](PickingList.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Packing List 
+![PackingList](PackingList.png)
 
-## Deploy on Vercel
+### No Orders 
+![No Orders](NoOrders.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
