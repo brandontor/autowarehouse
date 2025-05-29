@@ -19,7 +19,7 @@ export default function PackingListCard({ packingList }: Props) {
         <Card>
             <CardHeader>
                 <CardTitle>Packing List</CardTitle>
-                <CardDescription>List of orders containing packing details and shipping info</CardDescription>
+                <CardDescription>List of orders containing packing details and shipping info for packing team</CardDescription>
             </CardHeader>
             <CardContent className='space-y-4'>
                 {packingList.length === 0 ? <p>No Items to pack</p> : packingList.map((order) => {
