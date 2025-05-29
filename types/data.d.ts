@@ -1,13 +1,13 @@
 export interface SubProduct {
-    subProductId: string;
-    name: string;
-    quanitiy: number;
+  subProductId: string;
+  name: string;
+  quantity: number;
 }
 
 export interface Product {
-    productId: string;
-    productName: string;
-    contents: SubProduct[]
+  productId: string;
+  productName: string;
+  contents: SubProduct[]
 }
 
 
@@ -16,6 +16,7 @@ export interface LineItem {
   productId: string;
   productName: string;
   price: number;
+  contents?: SubProduct[]
 }
 
 export interface Order {
