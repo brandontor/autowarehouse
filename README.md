@@ -31,7 +31,7 @@ vs
 
 ![Content](/images/Content.png)
 
-2. Opted the picking list by tracking the Sub Product I.D. The ware house team could have some internal tracking system for locating sub items in the warehouse based on I.D. 
+2. Opted to extend the picking list by tracking the Sub Product I.D. The ware house team could have some internal tracking system for locating sub items in the warehouse based on I.D. 
 
 ![SubID](/images/SubProduct.png)
 
