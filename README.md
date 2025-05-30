@@ -4,8 +4,38 @@ This Application will automatically generate the following:
 - Picking List
 - Packing List
 
-### Note* 
+## Note* 
 Our Databases only contain data for May 27th, 2025 and May 29th, 2025
+
+## Considerations
+
+#### 1. Scalability in mind
+
+```
+{
+    "productName": "Valentines Box",
+    "contents": ["Rose Bouquet", "Chocolates", etc..]
+}
+
+vs
+
+{
+    "productName": "Valentines Box",
+    "contents": [{item: "Rose Bouquet", quantity: 1, price: 5}, {item: "Chocolates", quantity: 2, price: 5}]
+}
+```
+- Opted to store contents as an array of objects so that they could be expanded in the future
+
+#### 2. User QOL Features
+1. Opted to extend the Packing list by tracking contents per line item to make filling boxes easier.
+
+![Content](/images/Content.png)
+
+2. Opted the picking list by tracking the Sub Product I.D. The ware house team could have some internal tracking system for locating sub items in the warehouse based on I.D. 
+
+![SubID](/images/SubProduct.png)
+
+#### 
 
 ## Clone this Repo 
 
@@ -48,13 +78,16 @@ Refer to package.json for versions.
 
 Utilize the Date Picker to lookup orders based on their Order date. The Picking & Packing list will generate based on the returned orders.
 
+#### Note* 
+Our Databases only contain data for May 27th, 2025 and May 29th, 2025
+
 ### Picking List
-![PickingList](PickingList.png)
+![PickingList](/images/PickingList.png)
 
 ### Packing List 
-![PackingList](PackingList.png)
+![PackingList](/images/PackingList.png)
 
 ### No Orders 
-![No Orders](NoOrders.png)
+![No Orders](/images/NoOrders.png)
 
 
